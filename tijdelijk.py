@@ -1,5 +1,6 @@
+from helper import decoreer
+
 def print_aanbieding():
-# vraag 1.2
 
     prijzen={
         "aardbei" : 3,
@@ -8,43 +9,31 @@ def print_aanbieding():
     }
     print(prijzen)
 
-    # vraag 1.3
-
     aanbieding =prijzen["aardbei"]*0.8
     print(aanbieding)
 
-    # vraag 1.4
 
     reclame_tekst=f"Vandaag in de aanbieding : vanille-ijs, 1 liter - slechts €{aanbieding}"
 
     print(reclame_tekst)
 
-    # vraag 1.5
 
     reclame_tekst2=reclame_tekst[:63]
     print(reclame_tekst2)
 
-    # vraag 1.6
 
     reclame_tekst3=reclame_tekst2.upper()
     print(reclame_tekst3)
 
-    # vraag 1.7
 
     reclame_tekst4=reclame_tekst3.split()
     print(reclame_tekst4)
 
-    # vraag 1.8
-
     for el in reclame_tekst4:
-        print(el)
-
-    # vraag 1.9 
+        print(el) 
 
     for el in reclame_tekst4:
         print(el.lower())
-
-    # vraag 1.10
         
     for el in reclame_tekst4:
         if len(el)>=5:
@@ -52,7 +41,10 @@ def print_aanbieding():
         if len(el)<=4:
             print(el.lower())
 
+decoreer("aanbieding")
 print_aanbieding()
+
+
 
 
             
